@@ -1,0 +1,19 @@
+.carousel{
+    margin-top: 20px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 10em; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel-item > img{
+    max-width: 100%;
+    height: auto;
+    max-height: 40em;
+}
+.imageViewer{
+    margin: 20px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}

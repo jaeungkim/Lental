@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `admin`;
+DROP TABLE IF EXISTS `filter`;
+DROP TABLE IF EXISTS `image`;
+DROP TABLE IF EXISTS `listing`;
+DROP TABLE IF EXISTS `property`;
+DROP TABLE IF EXISTS `searchagent`;
+DROP TABLE IF EXISTS `account`;
+DROP TABLE IF EXISTS `subscription`;

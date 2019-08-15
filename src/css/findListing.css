@@ -1,0 +1,55 @@
+
+/* For find listing */
+.label-padding {
+    margin-right: 1em;
+}
+
+.noUi-connect {
+    /* put slider bar color here */
+    background-color: #819ca9;
+}
+
+.noUi-tooltip {
+    display: block;
+}
+
+.noUi-active .noUi-tooltip {
+    display: block;
+}
+
+.slider-padding {
+    margin-left: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.select-padding{
+    margin-bottom: 0.5em;
+}
+
+.noUi-tooltip {
+    border: 0;
+    background-color: transparent;
+    bottom: 90% !important;
+    color: rgb(120, 120, 120);
+    font-size: 11pt;
+}
+
+#jumboFindListing {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#filters {
+    margin-top: 2em;
+}
+.img-fit{
+    height: 6em;
+    object-fit: contain;
+    border-radius: 3pt;
+}
+.listing-price{
+    color: #1976d2;
+}
+.listing-container{
+    min-height: 40em;
+}

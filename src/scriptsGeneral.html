@@ -1,0 +1,26 @@
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/headerAJAX.js"></script> -->
+<script>
+    // form eventlistener
+    $('#loginForm').on("submit", function(e) {
+        e.preventDefault();
+        $("#loginError").addClass("d-none");
+        var email = $('[name=email]').val();
+        var password = $("[name=password]").val();
+        $.post("script/processLogin.php", {
+                email: email,
+                password: password
+            },
+            function(result) {
+                if (result == 0) {
+                    $("#loginError").removeClass("d-none");
+                }
+                else {
+                    location.reload();
+                }
+            });
+    });
+</script>
+<script src="js/otherGeneral.js"></script>

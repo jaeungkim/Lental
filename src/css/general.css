@@ -1,0 +1,44 @@
+.bg-opaque {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-house {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)), url("../assets/frontHouse.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3em;
+}
+
+.footer {
+    margin-top: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: lightgray;
+}
+
+.hr-gray {
+    border-color: gray;
+}
+
+.no-corner {
+    border-radius: 0 !important;
+}
+
+.no-margin {
+    margin: 0;
+}
+.shadow{
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 10px rgba(0, 0, 0, 0.3);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 10px rgba(0, 0, 0, 0.3);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.center-text{
+    text-align: center;
+}
+.hr-fade{
+    margin: 15px 0;
+    height: 1px;
+    border: 0;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, lightgray));
+}

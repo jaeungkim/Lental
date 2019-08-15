@@ -1,0 +1,188 @@
+/*
+     Search bars on the homepage
+    ------------------------
+*/
+.search-bar {
+  border-radius: 5rem;
+  background: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+
+.search-bar .form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.search-bar .form-group::after {
+  display: block;
+  width: 1px;
+  height: 60%;
+  content: '';
+  background: #ddd;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.search-bar .form-group.no-divider::after, .search-bar .form-group:last-of-type::after {
+  display: none;
+}
+
+.search-bar .form-control {
+  height: calc(1.5em + 1rem + 2px);
+}
+
+.search-bar .input-label-absolute-right .label-absolute {
+  right: 0;
+}
+
+@media (max-width: 991.98px) {
+  .search-bar {
+    border-radius: 20px;
+  }
+  .search-bar .form-group {
+    margin-bottom: 1rem;
+  }
+  .search-bar .form-group::after {
+    display: block;
+    width: calc(100% - 4rem);
+    height: 1px;
+    content: '';
+    background: #dee2e6;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .search-bar .form-control {
+    padding: 10px 20px;
+    height: calc(1.6em + 0.75rem + 2px);
+  }
+  .search-bar .input-label-absolute-right .label-absolute {
+    right: 1rem;
+  }
+  .search-bar .bootstrap-select {
+    display: block !important;
+    width: 100% !important;
+    padding: 0;
+  }
+  .search-bar .bootstrap-select button {
+    display: block;
+    width: 100% !important;
+    padding: 10px 20px;
+  }
+}
+.label-absolute {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #868e96;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+.subtitle {
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #868e96;
+  font-weight: bold;
+}
+
+/* image get started*/
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+img.bg-image {
+  font-family: 'object-fit: cover;';
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/*
+     Transparent overlays
+    ------------------------
+*/
+.light-overlay,
+.dark-overlay,
+.gradient-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.light-overlay .overlay-content,
+.dark-overlay .overlay-content,
+.gradient-overlay .overlay-content {
+  position: relative;
+  z-index: 20;
+}
+
+.light-overlay::after,
+.dark-overlay::after,
+.gradient-overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: ' ';
+  opacity: .3;
+  background: #000;
+}
+/*instagram slider*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*/instagram slider*/
+
+.letter-spacing-4 {
+  letter-spacing: 0.4em;
+}
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.text-serif {
+  font-family: "Playfair Display", serif !important;
+}
